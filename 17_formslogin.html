@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página no navegador </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Renan">
+        <meta name="description" content="Aprendendo front end">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            .formlogin{
+                width: 250px;
+                margin: 50px auto 0;
+            }
+            .formlogin fieldset{
+                background: rgb(201, 223, 255);
+            }
+            .formlogin legend{
+                display: inline-block;
+                background: #ddd;
+                padding: 5px;
+                border: 2px solid black;
+            }
+            #user, #pass, .button{
+                display: block;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 10px;
+                font-family: sans-serif;
+            }
+            .button{
+                margin-top: 10px;
+            }
+            #user{
+                margin-bottom: 15px;
+            }
+            #user, #pass{
+                background: rgb(243, 243, 243);
+            }
+            #user:focus, #pass:focus {
+                background: white;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Exemplo de formulário</h1>
+
+        <form action="#" method="POST" class="formlogin">
+            
+            <fieldset>
+                <legend>Login</legend>
+
+                <label for="User"> Digite o seu usuário</label>
+                <input type="text" id="user" name="user" autofocus>
+
+                <label for="senha"> Digite a senha</label>
+                <input type="password" id="pass" name="senha">
+
+                <input type="submit" value="logar" class="button">
+
+                
+            </fieldset>
+        </form>
+
+            
+
+    </body>
+</html>

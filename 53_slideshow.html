@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página no navegador </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Renan">
+        <meta name="description" content="Aprendendo front end">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            
+            @keyframes slide{
+                0%, 22%{
+                    transform: translateY(0);
+                }
+                
+                25%, 47%{
+                    transform: translateY(-50vh);
+                }
+                
+                50%, 72%{
+                    transform: translateY(-100vh);
+                }
+                
+                75%, 97%{
+                    transform: translateY(-150vh);
+                }
+                
+                100%{
+                    transform: translateY(0);
+                }
+            }
+            body{
+                font-family: sans-serif;
+                color: white;
+                background: rgb(138, 138, 138);
+                margin: 0;
+            }
+
+            #slide-externo{
+                width: 80vw;
+                height: 50vh;
+                border: 10px solid white;
+                box-shadow: 0 0 10px black;
+                margin-left: 10vw;
+                overflow: hidden;
+                box-sizing: border-box;
+            }
+
+            #slide-interno{
+                width: 100%;
+                animation: slide 10s infinite;
+
+            }
+
+            #slide-interno img{
+            display: block;
+            height: 50vh;
+            width: 100vw;
+            object-fit: cover;
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <h2>Animation - Slideshow</h2>
+
+        <div id="slide-externo">
+            <div id="slide-interno">
+                <img src="../Aulas/assets/img/imagens_slideshow/slide1.jpg" alt="#">
+                <img src="../Aulas/assets/img/imagens_slideshow/slide2.jpg" alt="#">
+                <img src="../Aulas/assets/img/imagens_slideshow/slide3.jpg" alt="#">
+                <img src="../Aulas/assets/img/imagens_slideshow/slide4.jpg" alt="#">
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Transforms</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Renan">
+        <meta name="description" content="Aprendendo front end">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+
+            html, body{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .div1{
+                width: 150px;
+                height: 50px;
+                background: red;
+                transform: translate(150px, 50%)
+
+                /*
+                position: relative;
+                top: 50px;
+                left: 50px;
+                */
+            }
+
+            .div2{
+                width: 150px;
+                height: 50px;
+                background: blue;
+                position: relative;
+                left: 50%;
+            }
+
+            .div3{
+                width: 50%;
+                overflow: hidden;
+                border: 2px solid black;
+            }
+
+            .div3-interna{
+                background: yellow;
+                transform: translateX(50%, 30px)
+            }
+
+            .div4{
+                width: 50%;
+                overflow: hidden;
+                border: 2px solid black;
+            }
+
+            .div4-interna{
+                background: yellow;
+                transform: rotate(45deg)
+            }
+
+            .div5{
+                width: 50%;
+                overflow: hidden;
+                border: 2px solid black;
+            }
+
+            .div5-interna{
+                background: yellow;
+                transform: rotate(-10deg);
+                transform-origin: left top;
+            }
+
+            .div6{
+                width: 50%;
+                overflow: hidden;
+                border: 2px solid black;
+            }
+
+            .div6-interna{
+                width: 30%;
+                background: yellow;
+                transform: rotate(30deg) translate(80px);
+            }
+
+            .div7{
+                width: 50%;
+                overflow: hidden;
+                border: 2px solid black;
+            }
+
+            .div7-interna{
+                width: 30%;
+                background: yellow;
+                transform: translate(80px) rotate(30deg);
+            }
+
+            .div8{
+                width: 100px;
+                height: 100px;
+                background: orange;
+                transform: skew(-30deg, 50deg);
+            }
+
+            .div9{
+                width: 100px;
+                height: 100px;
+                background: blue;
+                transform: scale(.5);
+                transition: transform .5s;
+            }
+
+            .div9:hover{
+                transform: scale(1.5);
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="div1">Div1</div>
+        <div class="div2">Div2</div>
+        <hr>
+        <div class="div3">
+            <div class="div3-interna">Conteúdo qualquer</div>
+            
+            <p>The album is produced in 432hz tunning and features sampled speech from Alan Watts. These messages contain universal truths, that I would like to spread through music. In a way, this album is a tribute to him.</p>
+        
+        </div>
+
+        <hr>
+
+        <div class="div4">
+            <div class="div4-interna">Conteúdo qualquer</div>
+            
+            <p>The album is produced in 432hz tunning and features sampled speech from Alan Watts. These messages contain universal truths, that I would like to spread through music. In a way, this album is a tribute to him.</p>
+        
+        </div>
+
+        <hr>
+
+        <div class="div5">
+            <div class="div5-interna">Conteúdo qualquer</div>
+            
+            <p>The album is produced in 432hz tunning and features sampled speech from Alan Watts. These messages contain universal truths, that I would like to spread through music. In a way, this album is a tribute to him.</p>
+        
+        </div>
+
+        <hr>
+
+        <div class="div6">
+            <div class="div6-interna">Conteúdo qualquer</div>
+            
+            <p>The album is produced in 432hz tunning and features sampled speech from Alan Watts. These messages contain universal truths, that I would like to spread through music. In a way, this album is a tribute to him.</p>
+        
+        </div>
+
+        <hr>
+
+        <div class="div7">
+            <div class="div7-interna">Conteúdo qualquer</div>
+            
+            <p>The album is produced in 432hz tunning and features sampled speech from Alan Watts. These messages contain universal truths, that I would like to spread through music. In a way, this album is a tribute to him.</p>
+        
+        </div>
+
+        <hr>
+
+        <div class="div8">Div 8</div>
+        <div class="div9">Div 9</div>
+
+        
+    </body>
+</html>

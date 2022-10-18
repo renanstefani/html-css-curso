@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página no navegador </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Renan">
+        <meta name="description" content="Aprendendo front end">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <!--O metodo abaixo é apenas uma demonstração de "floats" e "clear"... existem formas melhores para posicionamento-->
+        <style>
+            #container{
+                width: 80%;
+                padding: 15px;
+                background: #ccc;
+                overflow: auto;
+            }
+            #container div{
+                width: 150px;
+                height: 50px;
+                border: 2px solid red;
+                margin: 5px;
+            }
+            #div1{
+                float: left;
+            }
+            #div2{
+                float: left;
+            }
+            #div3{
+                float: left;
+                
+            }
+            header{
+                height: 50px;
+                background: #ccc;
+            }
+            nav{
+                width: 25%;
+                height: 50px;
+                background: orange;
+                float: left;
+            }
+            main{
+                width: 70%;
+                height: 100px;
+                background: yellow;
+                float: right;
+            }
+            footer{
+                height: 50px;
+                background: blue;
+                clear: both;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Float</h1>
+        <div id="container">
+            <div id="div1">div1</div>
+            <div id="div2">div2</div>
+            <div id="div3">div3</div>
+        </div>
+
+        <hr>
+        <header>Header</header>
+        <nav>Nav</nav>
+        <main>Main</main>
+        <footer>Footer</footer>
+    </body>
+</html>
